@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProvideAuth, PrivateRoute} from './Auth.js';
+import { ProvideAuth, PrivateRoute } from './Auth.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,9 +12,10 @@ import {
 import './style.css';
 import 'bulma/css/bulma.css';
 
+import MainLayout from './layouts/Main.js';
+
 import Login from './components/Login/Login.js';
 import Recalada from './components/Recalada/Recalada.js';
-
 
 export default function App() {
   return (
@@ -24,10 +25,11 @@ export default function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <PrivateRoute path="/">
-            <div>sidebar aca podra servir?</div>
-            <Recalada />
-          </PrivateRoute>
+          <MainLayout>
+            <PrivateRoute path="/">
+              <Recalada />
+            </PrivateRoute>
+          </MainLayout>
         </Switch>
       </Router>
     </ProvideAuth>
