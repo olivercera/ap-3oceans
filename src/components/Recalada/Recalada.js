@@ -1,11 +1,18 @@
 import React from 'react';
 import './Recalada.css';
-import Sidebar from './../Sidebar.js';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+  useHistory,
+  useLocation,
+} from 'react-router-dom';
 export default function Recalada() {
   return (
     <div>
-      Welcome to recaladas Add Recalada
+      Welcome to recaladas <Link to="/recalada/create">Add Recalada</Link>
       <div>
         <div class="box">
           <table class="table">

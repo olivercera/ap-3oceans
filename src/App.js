@@ -16,6 +16,7 @@ import MainLayout from './layouts/Main.js';
 
 import Login from './components/Login/Login.js';
 import Recalada from './components/Recalada/Recalada.js';
+import RecaladaManage from './components/Recalada/RecaladaManage.js';
 
 export default function App() {
   return (
@@ -26,8 +27,14 @@ export default function App() {
             <Login />
           </Route>
           <MainLayout>
-            <PrivateRoute path="/">
+            <PrivateRoute exact path="/">
               <Recalada />
+            </PrivateRoute>
+            <PrivateRoute exact path="/recalada/create">
+              <RecaladaManage />
+            </PrivateRoute>
+            <PrivateRoute exact path="/recalada/edit/:id">
+              <RecaladaManage />
             </PrivateRoute>
           </MainLayout>
         </Switch>
