@@ -2,6 +2,10 @@ import React from 'react';
 import './Recalada.css';
 
 export default function RecaladaManage() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div>
       <form onSubmit={handleSubmit}>

@@ -6,4 +6,6 @@ export const getRecaladas = (page) => {
 
 export const getRecaladaById = (id) => {};
 
-export const createRecalada = (content) => {};
+export const createRecalada = (content) => {
+  return fetch(`${url}users.json?page=${page}`);
+};
