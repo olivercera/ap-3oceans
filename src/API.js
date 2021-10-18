@@ -1,13 +1,9 @@
-const url = "https://24pullrequests.com/";
+const url = 'https://cors-anywhere.herokuapp.com/https://24pullrequests.com/';
 
-const getEscaladas = () => {
+export const getRecaladas = (page) => {
+  return fetch(`${url}users.json?page=${page}`);
+};
 
-}
+export const getRecaladaById = (id) => {};
 
-const getEscaladaById = (id) => {
-
-}
-
-const createEscalada = (content) => {
-
-}
+export const createRecalada = (content) => {};
