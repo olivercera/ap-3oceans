@@ -8,7 +8,9 @@ export default function RecaladaManage() {
 
   return (
     <div>
+
       <form onSubmit={handleSubmit}>
+      <h1 class="title-table mb-4 mt-4">NEW RECALADAS</h1>
         <div class="table-cont columns is-flex">
           <div class="column is-10 is-flex is-flex-direction-column p-6" >
 
@@ -67,7 +69,7 @@ export default function RecaladaManage() {
            
           </div>
         </div>
-        <div class="is-flex is-justify-content-flex-end is-align-items-center">
+        <div class="is-flex is-justify-content-flex-end is-align-items-center mt-6">
           <a>Cancel</a> <button class="button button-table text-lato font-white ml-6" type="submit">Add Recalada</button>
         </div>
       </form>

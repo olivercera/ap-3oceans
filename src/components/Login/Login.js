@@ -78,7 +78,7 @@ export default function App() {
               </p>
             </div>
           </form>
-
+<p>2021 all rights reserved</p>
         </div>
       </div>
     </div>

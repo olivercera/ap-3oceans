@@ -12,11 +12,11 @@ export default function Sidebar() {
           <div class="column is-flex is-justify-content-start">
           <div class="menu-sidebar is-flex is-flex-direction-column is-justify-content-space-between is-align-items-center">
             <div class="is-flex is-flex-direction-column">
-              <img src="./img/icons/Vector.png" alt="" class="icon-menu" />
-              <img src="./img/icons/Vector2.png" alt="" class="icon-menu" />
+              <img src="./img/icons/home.svg" alt="" class="icon-menu" />
+              <img src="./img/icons/user.svg" alt="" class="icon-menu" />
             </div>
             <div>
-              <img src="./img/icons/Group.png" alt="" class="icon-menu"  onClick={() => {
+              <img src="./img/icons/logout.svg" alt="" class="icon-menu"  onClick={() => {
           auth.signout(() => history.push('/'));
         }}/>
             </div>

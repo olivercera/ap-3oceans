@@ -27,7 +27,7 @@ export default function App() {
             <Login />
           </Route>
           <Route path="/" component={MainLayout}/>        
-          <Route path="/recalada" component={RecaladaManage}/>
+          <Route path="/recalada" component={Recalada}/>
           {/* <MainLayout>
             <PrivateRoute exact path="/">
               <Recalada />
