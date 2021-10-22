@@ -10,6 +10,8 @@ import {
   useLocation,
 } from 'react-router-dom';
 
+// import background1 from '../../../public/img/img-login.png';
+
 import { useAuth } from '../../Auth.js';
 
 export default function App() {
@@ -24,18 +26,55 @@ export default function App() {
     });
   };
 
+
   return (
-    <div className="columns">
-      <div className="column main-background">image</div>
-      <div className="column">
-        <label> Email address </label>
-        <input class="input" type="text" placeholder="Text input" />
 
-        <label> Password </label>
-        <input class="input" type="text" placeholder="Text input" />
+    <>
+   
+    <div class="container-principal columns is-flex is-flex-direction-row" 
+    style={{backgroundImage: `url()`}}>
 
-        <input onClick={login} class="button" type="submit" value="Login" />
+
+      <div class="col-1">
+        <div class="container-logo">
+          <img src="./img/LOGO-1.png" alt="" class="logo-1"/>
+        </div>
+        <div class="container-img">
+          <img src="./img/img-login.png" alt="" class="img-login"/>
+        </div>
+
+      </div>
+      <div class="col-2">
+        <div class="container-col-2">
+          <h1 class="h1-title">Welcome to 3 OCEANS</h1>
+          <p class="p-subtitle">Lorem ipsum dolor sit amet consectetur</p>
+          <form class="container-form">
+            <div class="field">
+              <label class="label">Email Address</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="Enter email address" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <input class="input" type="password" placeholder="Enter password" />
+              </div>
+            </div>
+            <div class="link label">
+              <Link>Forgot password?</Link>
+            </div>
+            <div class="field">
+              <p class="control">
+              <input onClick={login} class="button button color-buttons" type="submit" value="Login" />
+              </p>
+            </div>
+          </form>
+
+        </div>
       </div>
     </div>
+    </>
   );
 }
