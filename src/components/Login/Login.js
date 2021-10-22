@@ -14,6 +14,17 @@ import {
 
 import { useAuth } from '../../Auth.js';
 
+const styles = {
+  paperContainer: {
+      height: 700,
+      backgroundImage: `url(${"/img/img-login.png"})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+     backgroundPosition: 'center',
+  
+  }
+};
+
 export default function App() {
   let history = useHistory();
   let location = useLocation();
@@ -31,20 +42,16 @@ export default function App() {
 
     <>
    
-    <div class="container-principal columns is-flex is-flex-direction-row" 
-    style={{backgroundImage: `url()`}}>
-
-
-      <div class="col-1">
-        <div class="container-logo">
-          <img src="./img/LOGO-1.png" alt="" class="logo-1"/>
+    <div class="container-principal columns is-flex is-flex-direction-row">
+      <div class="col-1 column is-6">
+        <div class="container-logo" >
+          <img src="./img/logo.png" alt="" class="logo-1"/>
         </div>
-        <div class="container-img">
-          <img src="./img/img-login.png" alt="" class="img-login"/>
+        <div class="container-img"  style={styles.paperContainer}>
         </div>
 
       </div>
-      <div class="col-2">
+      <div class="col-2 column is-6">
         <div class="container-col-2">
           <h1 class="h1-title">Welcome to 3 OCEANS</h1>
           <p class="p-subtitle">Lorem ipsum dolor sit amet consectetur</p>

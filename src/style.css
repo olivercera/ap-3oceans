@@ -1,3 +1,5 @@
-h1, p {
-  font-family: Lato;
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura'), url(fonts/Futura_Book_font.ttf) format('opentype');
 }
+

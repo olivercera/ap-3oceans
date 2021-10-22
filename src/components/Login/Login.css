@@ -1,6 +1,4 @@
-.main-background {
-  background: url(https://picsum.photos/200/300) no-repeat;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 *{
   margin: 0px;
@@ -21,6 +19,7 @@
   width: 50%;
   height: 100%;
   overflow: hidden;
+  padding: 0px;
 }
 .col-2{
   padding-top: 11%;
@@ -64,13 +63,6 @@
 }
 .container-img{
   width: 100%;
-}
-@supports(object-fit: cover){
-  .container-img img{
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
 }
 
 .logo-1{

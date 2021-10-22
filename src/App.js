@@ -26,7 +26,9 @@ export default function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <MainLayout>
+          <Route path="/" component={MainLayout}/>        
+          <Route path="/recalada" component={RecaladaManage}/>
+          {/* <MainLayout>
             <PrivateRoute exact path="/">
               <Recalada />
             </PrivateRoute>
@@ -36,7 +38,7 @@ export default function App() {
             <PrivateRoute exact path="/recalada/edit/:id">
               <RecaladaManage />
             </PrivateRoute>
-          </MainLayout>
+          </MainLayout> */}
         </Switch>
       </Router>
     </ProvideAuth>

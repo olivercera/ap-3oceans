@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.body-home {
+    padding-left: 9%;
+    padding-right: 9%;
+    height: 50%;
+}
+
+.menu-sidebar {
+    height: 200px;
+    width: 50px;
+    background: #002985;
+    border-radius: 57px;
+    padding: 20px 5px;
+}
+
+.colum-2 {
+    height: 400px;
+}
+
+
+
+
+.title-table {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+    letter-spacing: 2px;
+}
+.button-table {
+    background: #002985 !important;
+    border-radius: 14px;
+    height: 45px;
+    width: 150px;
+}
+.table-cont {
+    background: white;
+    border-radius: 25px;
+}
+
+.header-home {
+    padding: 3% 9%;
+}
+.img-header {
+    width: 100px;
+}
+.user {
+    margin: 10px;
+}
+
+.text-lato {
+    
+    font-size: Lato;
+    font-size: 16px;
+}
+.table-cont {
+    background: white;
+    border-radius: 25px;
+}
+.button-table {
+    background: #002985 !important;
+    border-radius: 14px;
+    height: 45px;
+    width: 150px;
+}
+.font-white{
+    color: white !important;
+}
+.width-select{
+    width: 75%;
+}
+
+.select-style{
+    width: 100%;
+height: 58px;
+background: #FCFDFF;
+border: 1px solid #BDD4FF;
+box-sizing: border-box;
+border-radius: 11px;
+}
+
+
+.button-add{
+    width: 200px;
+    background: #FFFFFF;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+border-radius: 56px;
+}
+.icon-menu {
+    width: 17px;
+    cursor: pointer;
+}

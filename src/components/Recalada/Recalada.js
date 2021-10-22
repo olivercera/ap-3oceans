@@ -30,40 +30,35 @@ export default function Recalada() {
 
   return (
     <div>
-      Welcome to recaladas <Link to="/recalada/create">Add Recalada</Link>
-      <div>
-        <div className="box">
-          <table className="table">
-            <thead>
-              <tr>
-                <th>
-                  <abbr title="Position">ID</abbr>
-                </th>
-                <th>Team</th>
-                <th>
-                  <abbr title="Played">Recalada</abbr>
-                </th>
-                <th>
-                  <abbr title="Won">Buque</abbr>
-                </th>
-                <th>
-                  <abbr title="Drawn">Edit</abbr>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {recaladas.map((recalada, index) => (
+          <div class="is-flex is-flex-direction-row is-justify-content-space-between">
+            <h1 class="title-table">WELCOME TO RECALADAS</h1>
+            <Link to= "/recalada/create" class="button button-table text-lato font-white">Add Recalada</Link>
+          </div>
+          <div class="table-cont mt-4">
+            <table class="table is-fullwidth">
+              <thead>
                 <tr>
-                  <th>{recalada.id}</th>
-                  <td>{recalada.nickname}</td>
-                  <td>{recalada.contributions_count}</td>
-                  <td>botones</td>
+                  <th>ID</th>
+                  <th>RECALADA</th>
+                  <th>BUQUE</th>
+                  <th>EDIT</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {recaladas.map((recalada, index) => (
+                  <tr>
+                    <th>{recalada.id}</th>
+                    <td>{recalada.nickname}</td>
+                    <td>{recalada.contributions_count}</td>
+                    <td>
+                      <Link> <img src="./img/icons/dots.png"/></Link>
+                      <Link> <img src="./img/icons/delete.png"/></Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
