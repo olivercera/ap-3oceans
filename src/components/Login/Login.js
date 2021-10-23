@@ -42,39 +42,39 @@ export default function App() {
 
     <>
    
-    <div class="container-principal columns is-flex is-flex-direction-row">
-      <div class="col-1 column is-6">
-        <div class="container-logo" >
-          <img src="./img/logo.png" alt="" class="logo-1"/>
+    <div className="container-principal columns is-flex is-flex-direction-row">
+      <div className="col-1 column is-6">
+        <div className="container-logo" >
+          <img src="./img/logo.png" alt="" className="logo-1"/>
         </div>
-        <div class="container-img"  style={styles.paperContainer}>
+        <div className="container-img"  style={styles.paperContainer}>
         </div>
 
       </div>
-      <div class="col-2 column is-6">
-        <div class="container-col-2">
-          <h1 class="h1-title">Welcome to 3 OCEANS</h1>
-          <p class="p-subtitle">Lorem ipsum dolor sit amet consectetur</p>
-          <form class="container-form">
-            <div class="field">
-              <label class="label">Email Address</label>
-              <div class="control">
-                <input class="input" type="email" placeholder="Enter email address" />
+      <div className="col-2 column is-6">
+        <div className="container-col-2">
+          <h1 className="h1-title">Welcome to 3 OCEANS</h1>
+          <p className="p-subtitle">Lorem ipsum dolor sit amet consectetur</p>
+          <form className="container-form">
+            <div className="field">
+              <label className="label">Email Address</label>
+              <div className="control">
+                <input className="input" type="email" placeholder="Enter email address" />
               </div>
             </div>
 
-            <div class="field">
-              <label class="label">Password</label>
-              <div class="control">
-                <input class="input" type="password" placeholder="Enter password" />
+            <div className="field">
+              <label className="label">Password</label>
+              <div className="control">
+                <input className="input" type="password" placeholder="Enter password" />
               </div>
             </div>
-            <div class="link label">
+            <div className="link label">
               <Link>Forgot password?</Link>
             </div>
-            <div class="field">
-              <p class="control">
-              <input onClick={login} class="button button color-buttons" type="submit" value="Login" />
+            <div className="field">
+              <p className="control">
+              <input onClick={login} className="button button color-buttons" type="submit" value="Login" />
               </p>
             </div>
           </form>

@@ -29,24 +29,24 @@ export default class MainLayout extends Component {
     render() {
     return (
       <div style={styles.paperContainer}>
-        <div class="is-flex is-flex-direction-row is-justify-content-space-between header-home">
+        <div className="is-flex is-flex-direction-row is-justify-content-space-between header-home">
           <div >
-            <img src="./img/logo.png" alt="" class="img-header" />
+            <img src="./img/logo.png" alt="" className="img-header" />
           </div>
-          <div class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">
-            <p class="mr-4">Name user</p>
-            <figure class="image is-48x48">
-              <img class="is-rounded" src="./img/user.png" />
+          <div className="is-flex is-flex-direction-row is-align-items-center is-justify-content-center">
+            <p className="mr-4">Name user</p>
+            <figure className="image is-48x48">
+              <img className="is-rounded" src="./img/user.png" />
             </figure>
           </div>
         </div>
 
-        <div class="columns body-home is-align-items-center mt-6">
-          <div class="column is-2">
+        <div className="columns body-home is-align-items-center mt-6">
+          <div className="column is-2">
             <Sidebar />
             {this.props.children}
           </div>
-          <div class="column">
+          <div className="column">
             <Home/>
           </div>
         </div>

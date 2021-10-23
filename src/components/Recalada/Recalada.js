@@ -30,12 +30,12 @@ export default function Recalada() {
 
   return (
     <div>
-          <div class="is-flex is-flex-direction-row is-justify-content-space-between">
-            <h1 class="title-table mb-4 mt-4">WELCOME TO RECALADAS</h1>
-            <Link to= "/recalada/create" class="button button-table text-lato font-white">Add Recalada</Link>
+          <div className="is-flex is-flex-direction-row is-justify-content-space-between">
+            <h1 className="title-table mb-4 mt-4">WELCOME TO RECALADAS</h1>
+            <Link to= "/recalada/create" className="button button-table text-lato font-white">Add Recalada</Link>
           </div>
-          <div class="table-cont mt-4">
-            <table class="table is-fullwidth">
+          <div className="table-cont mt-4">
+            <table className="table is-fullwidth">
               <thead>
                 <tr>
                   <th>ID</th>

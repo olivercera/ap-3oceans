@@ -1,0 +1,28 @@
+.font{
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+}
+
+.icon-arrow{
+    width: 20px;
+    height: 20px;
+
+}
+
+.table-items th{
+    font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.025em;
+text-transform: uppercase;
+
+/* Blue dark */
+
+color: #002985;
+}
