@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 import Sidebar from '../components/Sidebar.js';
 import Recalada from '../components/Recalada/Recalada.js';
+import Home from '../components/Home/Home.js';
 import RecaladaManage from '../components/Recalada/RecaladaManage.js';
 
 
@@ -46,7 +47,7 @@ export default class MainLayout extends Component {
             {this.props.children}
           </div>
           <div class="column">
-            <RecaladaManage/>
+            <Home/>
           </div>
         </div>
       </div>

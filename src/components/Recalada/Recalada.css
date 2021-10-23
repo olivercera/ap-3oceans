@@ -98,7 +98,8 @@ border-radius: 11px;
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 border-radius: 56px;
 }
-.icon-menu {
+
+.icon-menu-add {
     width: 17px;
     cursor: pointer;
 }

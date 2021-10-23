@@ -1,5 +1,5 @@
 .icon-menu {
     width: 17px;
-    margin-top: 15px;
+    margin-top: 15px !important;
     cursor: pointer;
 }
