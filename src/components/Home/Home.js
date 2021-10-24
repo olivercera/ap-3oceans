@@ -40,10 +40,11 @@ export default function Home() {
           <div className="table-cont mt-4">
             <table className="table is-fullwidth">
               <thead>
-                <tr classNameName='table-items'>
-                  <th>ID</th>
-                  <th>RECALADA</th>
-                  <th>BUQUE</th>
+                <tr className='table-items'>
+                  <th>STATUS</th>
+                  <th>TASK</th>
+                  <th>ITEM</th>
+                  <th>INFO</th>
                   <th>EDIT</th>
                 </tr>
               </thead>
@@ -52,6 +53,7 @@ export default function Home() {
                   <tr>
                     <th>{recalada.id}</th>
                     <td>{recalada.nickname}</td>
+                    <td>{recalada.contributions_count}</td>
                     <td>{recalada.contributions_count}</td>
                     <td>
                       <Link> <img src="./img/icons/dots.png"/></Link>

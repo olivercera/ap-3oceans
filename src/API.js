@@ -1,7 +1,9 @@
 const url = 'https://cors-anywhere.herokuapp.com/https://24pullrequests.com/';
 
 export const getRecaladas = (page) => {
-  return fetch(`${url}users.json?page=${page}`);
+  const response = fetch(`${url}users.json?page=${page}`);
+  console.log(response)
+  return response;
 };
 
 export const getRecaladaById = (id) => {};

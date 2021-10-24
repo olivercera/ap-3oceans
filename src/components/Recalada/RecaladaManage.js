@@ -5,23 +5,19 @@ import Modal from "../Modal/Modal";
 import "./Recalada.css";
 
 export default function RecaladaManage() {
-  const [modal, setModal] = useState(false);
-  console.log(modal)
+  const [state, setState] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   const handleOpen = () => {
-    setModal(true);
+    setState(true);
   };
 
   const handleClose = () => {
-   
-    setModal(false);
-
-  }
-
- 
+    setState(false);
+  };
 
   return (
     <div>
@@ -65,8 +61,7 @@ export default function RecaladaManage() {
                 <button
                   onClick={handleOpen}
                   className=" button button-add is-flex is-align-items-center"
-                > 
-                {/* {modal ?  : null} */}
+                >
                   <img
                     className="icon-menu-add mr-2"
                     src="./img/icons/add.png"
@@ -76,7 +71,7 @@ export default function RecaladaManage() {
               </div>
             </div>
 
-         
+            {state ? <Modal state={state} handleClose={handleClose} /> : null}
 
             <label className="mt-4">Product</label>
             <div className="is-flex is-flex-direction-row  mt-2">

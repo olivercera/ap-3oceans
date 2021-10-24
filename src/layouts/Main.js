@@ -41,16 +41,20 @@ export default class MainLayout extends Component {
           </div>
         </div>
 
-        <div className="columns body-home is-align-items-center mt-6">
+        <div className="is-flex is-flex-direction-row colums">
           <div className="column is-2">
             <Sidebar />
             {this.props.children}
           </div>
-          <div className="column">
-            <Home/>
+          <div className="column is-8">
+          <RecaladaManage/>
           </div>
         </div>
+       
       </div>
+    
+
+     
     );
   }
 }
